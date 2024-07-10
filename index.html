@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-size: 1.5em; 
+            padding: 15px; 
+        }
+        h1 {
+            font-size: 1.5em; 
+        }
+        #formSenha {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; 
+            max-width: 400px; 
+        }
+        #inputContainer {
+            display: flex; 
+            width: 100%;
+        }
+        #senhaInput {
+            font-size: 1.5em; 
+            padding: 7.5px; 
+            margin-right: 7.5px; 
+            flex: 1; 
+        }
+        button {
+            font-size: 1.5em; 
+            padding: 7.5px 15px; 
+            cursor: pointer;
+        }
+    </style>
+</head>
+    <div>
+        <form id="formSenha">
+            <div id="inputContainer">
+                <input type="password" id="senhaInput" name="senhaInput" placeholder="Digite a senha...">
+                <button type="button" onclick="verificarSenha()">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
